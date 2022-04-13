@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 const serve = require('./serve');
 const boot = require('./boot');
@@ -19,6 +20,8 @@ async function main() {
   }
 
   const { notify } = await serve(handler);
+
+  fs.watch(path.dirname(SOURCE), notify);
 }
 
 main();
