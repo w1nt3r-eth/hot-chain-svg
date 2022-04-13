@@ -1,5 +1,4 @@
 const fs = require('fs');
-const { basename } = require('path');
 const path = require('path');
 const solc = require('solc');
 
@@ -40,6 +39,7 @@ function findImports(path) {
 
 function compile(source) {
   const input = getSolcInput(source);
+  process.chdir(path.dirname(source));
   const output = JSON.parse(
     solc.compile(JSON.stringify(input), { import: findImports })
   );
@@ -58,7 +58,7 @@ function compile(source) {
     throw new Error(errors.join('\n\n'));
   }
 
-  const result = output.contracts[basename(source)];
+  const result = output.contracts[path.basename(source)];
   const contractName = Object.keys(result)[0];
   return {
     abi: result[contractName].abi,
