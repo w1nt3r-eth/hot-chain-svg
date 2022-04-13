@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { basename } = require('path');
 const path = require('path');
 const solc = require('solc');
 
@@ -60,7 +61,12 @@ function compile(source) {
     return undefined;
   }
 
-  return output;
+  const result = output.contracts[basename(source)];
+  const contractName = Object.keys(result)[0];
+  return {
+    abi: result[contractName].abi,
+    bytecode: result[contractName].evm.bytecode.object,
+  };
 }
 
 module.exports = compile;
