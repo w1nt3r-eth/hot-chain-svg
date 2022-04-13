@@ -36,7 +36,7 @@ async function serve(handler) {
 
 const webpage = (content) => `
 <html>
-<title></title>
+<title>Hot Chain SVG</title>
 ${content}
 <script>
 const sse = new EventSource('/changes');
