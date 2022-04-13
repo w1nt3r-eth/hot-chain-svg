@@ -4,6 +4,9 @@
   "main": "src/index.js",
   "author": "w1nt3r.eth",
   "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
   "prettier": {
     "singleQuote": true
   },
