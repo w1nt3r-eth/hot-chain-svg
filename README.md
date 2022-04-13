@@ -2,11 +2,13 @@
 
 A toolkit for building on-chain SVG projects.
 
-> ⚠️ `WORK IN PROGRESS`: It's not usable as a library yet, but feel free to fork the repo and play with it.
+## Demo
 
 ![Demo of hot-chain-svg. The user is editing a Solidity file, and as they save it the resulting SVG is updated](.github/demo.gif)
 
 ## Getting started
+
+Feel free to clone the repo and tune it for your own needs. The codebase tries to be self-contained and only depends on NodeJS. You can integrate it with [Hardhat](https://hardhat.org/) and [Foundry](https://github.com/gakonst/foundry)-based projects.
 
 ```
 $ git clone https://github.com/w1nt3r-eth/hot-chain-svg
