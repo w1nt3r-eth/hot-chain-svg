@@ -2,7 +2,9 @@
 
 A toolkit for building on-chain SVG projects.
 
-⚠️ Work in progress. It's not usable as a library yet, but feel free to fork the repo and play with it.
+> ⚠️ `WORK IN PROGRESS`: It's not usable as a library yet, but feel free to fork the repo and play with it.
+
+![Demo of hot-chain-svg. The user is editing a Solidity file, and as they save it the resulting SVG is updated](.github/demo.gif)
 
 ## Getting started
 
@@ -40,7 +42,7 @@ The tool also watches the files in `contracts` for changes. When it detects a ch
 
 ## Contributing
 
-Check out GitHub issues and feel free to send a PR.
+Check out GitHub issues and feel free to send a PR. The codebase tries to stick to vanilla JS and minimum dependencies, there are more interesting things in the world than fighting TypeScript and ES6 modules.
 
 ## Credits
 

@@ -8,11 +8,11 @@ contract Renderer {
     function render(uint256 _tokenId) public pure returns (string memory) {
         return
             string.concat(
-                '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" style="background:#000">',
+                '<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" style="background:#000">',
                 svg.text(
                     string.concat(
                         svg.prop('x', '20'),
-                        svg.prop('y', '30'),
+                        svg.prop('y', '40'),
                         svg.prop('font-size', '22'),
                         svg.prop('fill', 'white')
                     ),
@@ -25,7 +25,7 @@ contract Renderer {
                     string.concat(
                         svg.prop('fill', 'purple'),
                         svg.prop('x', '20'),
-                        svg.prop('y', '40'),
+                        svg.prop('y', '50'),
                         svg.prop('width', utils.uint2str(160)),
                         svg.prop('height', utils.uint2str(10))
                     ),
