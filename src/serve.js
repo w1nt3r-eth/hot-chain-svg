@@ -8,7 +8,9 @@ async function serve(handler) {
     if (req.url === '/changes') {
       res.setHeader('Content-Type', 'text/event-stream');
       res.writeHead(200);
-      events.on('change', () => res.write('event: change\ndata:\n\n'));
+      const sendEvent = () => res.write('event: change\ndata:\n\n');
+      events.on('change', sendEvent);
+      req.on('close', () => events.off('change', sendEvent));
       return;
     }
 
