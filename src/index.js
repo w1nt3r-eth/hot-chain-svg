@@ -15,13 +15,14 @@ async function main() {
     const { abi, bytecode } = compile(SOURCE);
     const address = await deploy(vm, pk, bytecode);
     const result = await call(vm, address, address);
-    console.dir(result);
     return result;
   }
 
   const { notify } = await serve(handler);
 
   fs.watch(path.dirname(SOURCE), notify);
+  console.log('Watching', path.dirname(SOURCE));
+  console.log('Serving  http://localhost:9901/');
 }
 
 main();

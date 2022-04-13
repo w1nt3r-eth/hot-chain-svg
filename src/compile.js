@@ -44,21 +44,18 @@ function compile(source) {
     solc.compile(JSON.stringify(input), { import: findImports })
   );
 
-  let compilationFailed = false;
+  let errors = [];
 
   if (output.errors) {
     for (const error of output.errors) {
       if (error.severity === 'error') {
-        console.error(error.formattedMessage);
-        compilationFailed = true;
-      } else {
-        console.warn(error.formattedMessage);
+        errors.push(error.formattedMessage);
       }
     }
   }
 
-  if (compilationFailed) {
-    return undefined;
+  if (errors.length > 0) {
+    throw new Error(errors.join('\n\n'));
   }
 
   const result = output.contracts[basename(source)];
