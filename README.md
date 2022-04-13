@@ -48,3 +48,5 @@ Check out GitHub issues and feel free to send a PR. The codebase tries to stick 
 
 Built by [@w1nt3r_eth](https://twitter.com/w1nt3r_eth) and [@tylerangert](https://twitter.com/tylerangert).
 This project was extracted from [Watchfaces.World](https://www.watchfaces.world/).
+
+<a href="https://www.watchfaces.world/"><img alt="Project from Watchfaces.World" src=".github/banner.jpg"></a>
