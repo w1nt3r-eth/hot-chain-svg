@@ -1,5 +1,6 @@
 const path = require('path');
 const boot = require('./boot');
+const call = require('./call');
 const compile = require('./compile');
 const deploy = require('./deploy');
 
@@ -9,7 +10,8 @@ async function main() {
   const { vm, pk } = await boot();
   const { abi, bytecode } = compile(SOURCE);
   const address = await deploy(vm, pk, bytecode);
-  console.log(address);
+  const result = await call(vm, address, address);
+  console.dir(result);
 }
 
 main();
