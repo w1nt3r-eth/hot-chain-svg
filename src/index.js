@@ -14,7 +14,7 @@ async function main() {
   async function handler() {
     const { abi, bytecode } = compile(SOURCE);
     const address = await deploy(vm, pk, bytecode);
-    const result = await call(vm, address, address);
+    const result = await call(vm, address, abi, 'example');
     return result;
   }
 
