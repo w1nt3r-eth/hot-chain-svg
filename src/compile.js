@@ -12,7 +12,7 @@ function getSolcInput(source) {
     },
     settings: {
       optimizer: {
-        enabled: true,
+        enabled: false,
         runs: 1,
       },
       evmVersion: 'london',
