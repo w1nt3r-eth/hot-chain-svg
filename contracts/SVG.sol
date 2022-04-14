@@ -114,6 +114,19 @@ library svg {
         return el('animateTransform', _props, utils.NULL);
     }
 
+    function image(string memory _href, string memory _props)
+        internal
+        pure
+        returns (string memory)
+    {
+        return
+            el(
+                'image',
+                string.concat(prop('href', _href), ' ', _props),
+                utils.NULL
+            );
+    }
+
     /* COMMON */
     // A generic element, can be used to construct any SVG (or HTML) element
     function el(
