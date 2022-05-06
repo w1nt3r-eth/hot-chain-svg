@@ -8,13 +8,14 @@ const deploy = require('./deploy');
 const { DOMParser } = require('xmldom');
 
 const SOURCE = path.join(__dirname, '..', 'contracts', 'Renderer.sol');
+const DESTINATION = path.join(os.tmpdir(), 'hot-chain-svg-');
 
 async function main() {
   const { vm, pk } = await boot();
   const { abi, bytecode } = compile(SOURCE);
   const address = await deploy(vm, pk, bytecode);
 
-  const tempFolder = fs.mkdtempSync(os.tmpdir());
+  const tempFolder = fs.mkdtempSync(DESTINATION);
   console.log('Saving to', tempFolder);
 
   for (let i = 1; i < 256; i++) {
