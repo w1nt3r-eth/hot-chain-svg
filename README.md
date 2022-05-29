@@ -13,7 +13,7 @@ Feel free to clone the repo and tune it for your own needs. The codebase tries t
 ```
 $ git clone https://github.com/w1nt3r-eth/hot-chain-svg
 $ cd hot-chain-svg
-$ yarn
+$ yarn test
 ```
 
 ### Hot Reloading
