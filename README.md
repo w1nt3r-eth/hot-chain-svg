@@ -59,10 +59,10 @@ To mint
 1. Open [Hot Chain SVG](https://etherscan.io/address/0xa7988c8abb7706e024a8f2a1328e376227aaad18#writeContract) on Etherscan
 2. Inside "Contract" tab, select "Write Contract"
 3. Connect your wallet
-4. Choose mint function
-   a. `payableAmount (ether)` is the optional donation to send to the project. The card will be rendered differently depending on the amount (see below)
-   b. `name` is the project name as it will appear on the card
-   c. `collection` is the address on your contract that uses `hot-chain-svg` (you can use your own wallet address if you don't have a contract deployed)
+4. Choose `mint` function
+   - `payableAmount (ether)` is the optional donation to send to the project. The card will be rendered differently depending on the amount (see below)
+   - `name` is the project name as it will appear on the card
+   - `collection` is the address on your contract that uses `hot-chain-svg` (you can use your own wallet address if you don't have a contract deployed)
 
 <a href="https://opensea.io/collection/hot-chain-svg"><img alt="Projects using Hot Chain SVG" src=".github/nft_tiers.png"></a>
 
