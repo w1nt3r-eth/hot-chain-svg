@@ -5,17 +5,20 @@ name: Node.js CI
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: '*/5 * * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Sync Users
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16.x
-        cache: 'yarn'
-    - run: yarn
-
+      - uses: actions/checkout@v3
+      - name: Sync Users
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: 'yarn'
+      - run: yarn
+      - run: yarn sync-users
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Sync users
