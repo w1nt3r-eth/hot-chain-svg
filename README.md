@@ -50,6 +50,8 @@ The tool also watches the files in `contracts` for changes. When it detects a ch
 - [Watchfaces.World](https://etherscan.io/address/0x8d3b078d9d9697a8624d4b32743b02d270334af1) by w1nt3r.eth
 <!-- end_users -->
 
+[![Sync NFTs](https://github.com/w1nt3r-eth/hot-chain-svg/actions/workflows/sync-nfts.yml/badge.svg?event=schedule)](https://github.com/w1nt3r-eth/hot-chain-svg/actions/workflows/sync-nfts.yml)
+
 If your project is using `hot-chain-svg`, you can add it to this list by minting a free NFT. The NFTs are automatically synced with this README using a cron job on GitHub Actions.
 
 You can also support the project by sending Ether when minting the NFT.
