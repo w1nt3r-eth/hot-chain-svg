@@ -42,6 +42,30 @@ You'll notice there's `SVG.sol` inside the `contracts` folder. The idea is to pr
 
 The tool also watches the files in `contracts` for changes. When it detects a change, it sends an event to the browser via EventSource subscription, which causes the page to reload.
 
+## Projects & Supporters
+
+<!-- begin_users -->
+
+- [Hot Chain SVG](https://etherscan.io/address/0xa7988c8abb7706e024a8f2a1328e376227aaad18) by w1nt3r.eth
+- [Watchfaces.World](https://etherscan.io/address/0x8d3b078d9d9697a8624d4b32743b02d270334af1) by w1nt3r.eth
+<!-- end_users -->
+
+If your project is using `hot-chain-svg`, you can add it to this list by minting a free NFT. The NFTs are automatically synced with this README using a cron job on GitHub Actions.
+
+You can also support the project by sending Ether when minting the NFT.
+
+To mint
+
+1. Open [Hot Chain SVG](https://etherscan.io/address/0xa7988c8abb7706e024a8f2a1328e376227aaad18#writeContract) on Etherscan
+2. Inside "Contract" tab, select "Write Contract"
+3. Connect your wallet
+4. Choose mint function
+   a. `payableAmount (ether)` is the optional donation to send to the project. The card will be rendered differently depending on the amount (see below)
+   b. `name` is the project name as it will appear on the card
+   c. `collection` is the address on your contract that uses `hot-chain-svg` (you can use your own wallet address if you don't have a contract deployed)
+
+<a href="https://opensea.io/collection/hot-chain-svg"><img alt="Projects using Hot Chain SVG" src=".github/nft_tiers.png"></a>
+
 ## Contributing
 
 Check out GitHub issues and feel free to send a PR. The codebase tries to stick to vanilla JS and minimum dependencies, there are more interesting things in the world than fighting TypeScript and ES6 modules.

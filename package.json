@@ -15,6 +15,7 @@
     "@ethereumjs/vm": "^5.8.0",
     "@ethersproject/abi": "^5.6.0",
     "@openzeppelin/contracts": "^4.5.0",
+    "ethers": "^5.6.8",
     "solc": "^0.8.13",
     "xmldom": "^0.6.0"
   },
