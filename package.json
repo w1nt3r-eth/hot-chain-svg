@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node .",
     "qa": "node src/qa.js",
-    "sync-users": "node src/users.js"
+    "sync-nfts": "node src/sync-nfts.js"
   },
   "prettier": {
     "singleQuote": true
