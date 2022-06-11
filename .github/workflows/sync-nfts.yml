@@ -17,6 +17,8 @@ jobs:
         with:
           node-version: 16.x
           cache: 'yarn'
+        env:
+          PROVIDER_URL: ${{ secrets.PROVIDER_URL }}
       - run: yarn
       - run: yarn sync-nfts
       - uses: stefanzweifel/git-auto-commit-action@v4
