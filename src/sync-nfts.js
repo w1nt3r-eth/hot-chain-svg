@@ -49,10 +49,12 @@ async function main() {
     return `- [${name}](https://etherscan.io/address/${collection}) by ${owner}`;
   });
 
+  console.log(log);
+
   const readme = path.resolve(__dirname, '..', 'README.md');
   const content = fs.readFileSync(readme, 'utf8');
-  const updated = content.replace(
-    /<!-- begin_users -->\n(.*)<!-- end_users -->/gm,
+  const updated = content.replaceAll(
+    /<!-- begin_users -->[\s\S]+<!-- end_users -->/gim,
     ['<!-- begin_users -->', ...log, '<!-- end_users -->'].join('\n')
   );
   fs.writeFileSync(readme, updated);
