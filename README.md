@@ -50,6 +50,7 @@ The tool also watches the files in `contracts` for changes. When it detects a ch
 - [TsujiPoker](https://etherscan.io/address/0x2442f53979e9d0b990a7029e95cfdac6ad3a81df) by kaki.eth
 - [Gawds](https://etherscan.io/address/0x3769c5700da07fe5b8eee86be97e061f961ae340) by jamiedubs.eth
 - [Kinetic Spectrums](https://etherscan.io/address/0x2ac9795ca8fc6d09a5748cb9e8b9d67f4b09df07) by himlate.eth
+- [Runes of Eth](https://etherscan.io/address/0x555555551777611fd8eb00df11ea0904b560cf74) by w1nt3r.eth
 <!-- end_users -->
 
 [![Sync NFTs](https://github.com/w1nt3r-eth/hot-chain-svg/actions/workflows/sync-nfts.yml/badge.svg?event=schedule)](https://github.com/w1nt3r-eth/hot-chain-svg/actions/workflows/sync-nfts.yml)
