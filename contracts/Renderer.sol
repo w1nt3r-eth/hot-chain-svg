@@ -3,8 +3,9 @@ pragma solidity ^0.8.11;
 
 import './SVG.sol';
 import './Utils.sol';
+import './IRenderer.sol';
 
-contract Renderer {
+contract Renderer is IRenderer {
     function render(uint256 _tokenId) public pure returns (string memory) {
         return
             string.concat(
