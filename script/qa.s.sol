@@ -1,5 +1,5 @@
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.4;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.11;
 
 import {Script, console} from 'forge-std/Script.sol';
 import {Renderer} from 'hot-chain-svg/Renderer.sol';
