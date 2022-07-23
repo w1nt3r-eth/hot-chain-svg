@@ -42,9 +42,40 @@ You'll notice there's `SVG.sol` inside the `contracts` folder. The idea is to pr
 
 The tool also watches the files in `contracts` for changes. When it detects a change, it sends an event to the browser via EventSource subscription, which causes the page to reload.
 
+## Foundry
+
+### Getting started
+
+Run `forge install` to install all dependencies.
+
+### Hot Reloading
+
+```
+$ yarn start:forge
+
+or
+
+$ FOUNDRY_PROFILE=watch forge test --match-contract Watch -vvv --watch
+```
+
+When run in combination with `forge test --watch`, the `test/Watch.t.sol` file will continuously update `qa/0.svg` (or whichever file you specify). Since this file is not served via a local web server, it is best viewed within a pane of your IDE for realtime updates.
+
+### Visual QA
+
+```
+$ yarn qa:forge
+
+or
+
+$ forge script script/qa.s.sol -vvv --ffi
+```
+
+The script `script/qa.s.sol` emulates the behavior of the script `src/qa.js`, including checking for syntax errors. Output will be rendered to `qa/`
+
 ## Projects & Supporters
 
 <!-- begin_users -->
+
 - [Hot Chain SVG](https://etherscan.io/address/0xa7988c8abb7706e024a8f2a1328e376227aaad18) by w1nt3r.eth
 - [Watchfaces.World](https://etherscan.io/address/0x8d3b078d9d9697a8624d4b32743b02d270334af1) by w1nt3r.eth
 - [TsujiPoker](https://etherscan.io/address/0x2442f53979e9d0b990a7029e95cfdac6ad3a81df) by kaki.eth
