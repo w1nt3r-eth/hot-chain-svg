@@ -6,7 +6,8 @@ remappings = [
     '@openzeppelin/=node_modules/@openzeppelin/',
     'hot-chain-svg/=contracts/',
     'hot-chain-svg-script/=script/',
-    'openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/'
+    'openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/',
+    'hot-chain-svg-test/=test/'
 ]
 
 [profile.watch]
