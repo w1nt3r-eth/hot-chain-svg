@@ -48,7 +48,7 @@ The tool also watches the files in `contracts` for changes. When it detects a ch
 - [Hot Chain SVG](https://etherscan.io/address/0xa7988c8abb7706e024a8f2a1328e376227aaad18) by w1nt3r.eth
 - [Watchfaces.World](https://etherscan.io/address/0x8d3b078d9d9697a8624d4b32743b02d270334af1) by w1nt3r.eth
 - [TsujiPoker](https://etherscan.io/address/0x2442f53979e9d0b990a7029e95cfdac6ad3a81df) by kaki.eth
-- [Gawds](https://etherscan.io/address/0x3769c5700da07fe5b8eee86be97e061f961ae340) by 0xd9c4475e2dd89a9a0ad0c1e9a1e1bb28df7ba298
+- [Gawds](https://etherscan.io/address/0x3769c5700da07fe5b8eee86be97e061f961ae340) by jamiedubs.eth
 - [Kinetic Spectrums](https://etherscan.io/address/0x2ac9795ca8fc6d09a5748cb9e8b9d67f4b09df07) by bonhomme.eth
 - [Runes of Eth](https://etherscan.io/address/0x555555551777611fd8eb00df11ea0904b560cf74) by w1nt3r.eth
 <!-- end_users -->
