@@ -51,6 +51,7 @@ The tool also watches the files in `contracts` for changes. When it detects a ch
 - [Gawds](https://etherscan.io/address/0x3769c5700da07fe5b8eee86be97e061f961ae340) by jamiedubs.eth
 - [Kinetic Spectrums](https://etherscan.io/address/0x2ac9795ca8fc6d09a5748cb9e8b9d67f4b09df07) by bonhomme.eth
 - [Runes of Eth](https://etherscan.io/address/0x555555551777611fd8eb00df11ea0904b560cf74) by w1nt3r.eth
+- [Capsules of All Our Lives](https://etherscan.io/address/0xa6fd332bd26228fd88868ae9a7b512519008b72b) by 0xaf69610ea9ddc95883f97a6a3171d52165b69b03
 <!-- end_users -->
 
 [![Sync NFTs](https://github.com/w1nt3r-eth/hot-chain-svg/actions/workflows/sync-nfts.yml/badge.svg?event=schedule)](https://github.com/w1nt3r-eth/hot-chain-svg/actions/workflows/sync-nfts.yml)
