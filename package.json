@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node .",
     "qa": "node src/qa.js",
-    "sync-nfts": "node src/sync-nfts.js"
+    "sync-nfts": "node src/sync-nfts.js",
+    "qa:forge": "forge script script/qa.s.sol --ffi -vvv",
+    "start:forge": "FOUNDRY_PROFILE=watch forge test --match-contract Watch --watch"
   },
   "prettier": {
     "singleQuote": true
