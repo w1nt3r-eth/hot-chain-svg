@@ -1,2 +1,11 @@
 node_modules
 .DS_Store
+
+# foundry
+cache
+out
+
+# parcel
+index.html
+dist
+.parcel-cache
